@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Somar dois números</title>
-  <script src="trabalho.js" defer></script>
+<meta charset="utf-8">
+<title>Somar dois números</title>
+<script src="trabalho.js" defer></script>
 </head>
 
 <body>
   <h1>Somar dois números</h1>
-  <input type="text" data-js="number1">
-  <input type="text" data-js="number2">
+  <input type="text" data-js="numero1">
+  <input type="text" data-js="numero2">
   <button type="button">Somar</button>
   <div data-js="result"></div>
 
@@ -19,14 +15,14 @@
       .addEventListener('click', handleClick, false);
 
     function handleClick() {
-      var number1 = document.querySelector('[data-js="number1"]').value;
-      var number2 = document.querySelector('[data-js="number2"]').value;
+      var numero1 = document.querySelector('[data-js="numero1"]').value;
+      var numero2 = document.querySelector('[data-js="numero2"]').value;
 
-      document.querySelector('[data-js="result"]').innerHTML = sum(number1, number2);
+      document.querySelector('[data-js="result"]').innerHTML = sum(numero1, numero2);
     }
 
-    function sum(number1, number2) {
-      return number1 + number2;
+    function sum(numero1, numero2) {
+      return numero1 + numero2;
     }
   </script>
 </body>

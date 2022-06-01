@@ -1,6 +1,6 @@
-function sum(number1, number2) {
+function sum(numero1, numero2) {
     var DECIMAL = 10;
-    return parseInt(number1, DECIMAL) + parseInt(number2, DECIMAL);
+    return parseInt(numero1, DECIMAL) + parseInt(numero2, DECIMAL);
 }
 
 parseInt('10px'); // 10
