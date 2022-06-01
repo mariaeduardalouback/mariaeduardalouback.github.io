@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>Somar dois números</title>
+<title>Laborátorio - Números</title>
 <script src="trabalho.js" defer></script>
 </head>
 
@@ -27,6 +27,25 @@
   </script>
 <h1> Exercício - número 2 </h1>
 
+   Primeira numero:<input id="numero1" type="number"> <br />
+   Segundo  numero:<input id="numero2" type="number"> <br />
+   
+  <button onclick="maior()">Calcular Maior</button>
+
+   <script type="text/javascript">
+
+    function maior(){
+     var num1 = parseFloat(document.getElementById("numero1").value);
+     var num2 = parseFloat(document.getElementById("numero2").value);
+    
+    var maior = num1;
+
+     if(num2 > maior)
+      maior = num2;
+     
+     alert("Maior: "+maior);
+    }
+ </script>
 </body>
 
 </html>
